@@ -9,10 +9,10 @@ const UpdateProfile = () => {
     const [mobile,setMobile]=useState("")
     const [address,setAddress]=useState("")
 
-    const updateData=async(id)=>{
+    const updateData=async(_id)=>{
         console.log({fname,lname,dob,email,mobile,address})
         let data={fname,lname,dob,email,mobile,address}
-    let result=await fetch(`http://localhost:5000/user/${id}`,{
+    let result=await fetch(`http://localhost:5000/user/${_id}`,{
             method:'put',
             body:JSON.stringify(data),
             headers:{
@@ -41,7 +41,7 @@ const UpdateProfile = () => {
       <br/><br/>
       <input type="text"  value={address}  onChange={(e)=>setAddress(e.target.value)} placeholder='enter your address'/>
       <br/><br/>
-      <button onClick={updateData}>Update-Profile</button>
+      <button onClick={updateData()}>Update-Profile</button>
   </div>
   )
 }

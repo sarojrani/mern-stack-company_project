@@ -3,6 +3,7 @@ import Nav from './Nav';
 import Registration from './Registration';
 import Login from './Login';
 import UpdateProfile from './UpdateProfile';
+// import Protected from './Protected';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 
