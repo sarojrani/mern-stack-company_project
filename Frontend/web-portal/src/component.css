@@ -1,0 +1,18 @@
+.navbar{
+    text-align: end;
+    text-decoration:bolder;
+    
+}
+.navbar a{
+    padding: 1rem;
+}
+.sign-in{
+    justify-content: center;
+    text-align: center;
+}
+.sign-in input{
+    border: 2px solid black;
+}
+.sign-in button{
+    background-color: royalblue;
+}
